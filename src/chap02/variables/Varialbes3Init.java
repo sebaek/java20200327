@@ -1,4 +1,4 @@
-package chap02;
+package chap02.variables;
 
 public class Varialbes3Init {
 	public static void main(String[] args) {

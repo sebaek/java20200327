@@ -1,4 +1,4 @@
-package datatype;
+package chap02;
 
 public class Variables {
 	public static void main(String[] args) {

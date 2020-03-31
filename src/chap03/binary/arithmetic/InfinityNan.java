@@ -1,4 +1,4 @@
-package chap03.binary;
+package chap03.binary.arithmetic;
 
 public class InfinityNan {
 	public static void main(String[] args) {

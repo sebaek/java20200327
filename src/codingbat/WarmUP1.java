@@ -28,4 +28,30 @@ public class WarmUP1 {
 		return talking && (hour < 7 || hour > 20);
 	}
 
+	public boolean makes10(int a, int b) {
+		boolean r = a == 10 || b == 10 || (a + b) == 10;
+		return r;
+	}
+
+	public boolean nearHundred(int n) {
+		boolean r = (90 <= n && n <= 110) || (190 <= n && n <= 210);
+
+		return r;
+	}
+
+	public String notString(String str) {
+		int len = str.length();
+
+		if (len < 3) {
+			return "not " + str;
+		} else {
+			String f = str.substring(0, 3);
+			if (f.equals("not")) {
+				return str;
+			} else {
+				return "not " + str;
+			}
+		}
+
+	}
 }

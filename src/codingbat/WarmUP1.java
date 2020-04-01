@@ -76,4 +76,14 @@ public class WarmUP1 {
 
 	}
 
+	public String front3(String str) {
+		if (str.length() > 3) {
+			String f3 = str.substring(0, 3);
+			return f3 + f3 + f3;
+		} else {
+			return str + str + str;
+		}
+
+	}
+
 }

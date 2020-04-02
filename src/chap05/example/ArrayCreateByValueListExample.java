@@ -17,3 +17,10 @@ public class ArrayCreateByValueListExample {
 		System.out.println("평균 : " + avg);
 	}
 }
+
+
+
+
+
+
+

@@ -24,3 +24,11 @@ public class ArrayCreateByValueListExample2 {
 		return sum;
 	}
 }
+
+
+
+
+
+
+
+

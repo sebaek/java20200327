@@ -99,4 +99,20 @@ public class WarmUP1 {
 		return m3 || m5;
 	}
 
+	public String front22(String str) {
+		String s2;
+
+		if (str.length() >= 2) {
+			s2 = str.substring(0, 2);
+		} else {
+			s2 = str;
+		}
+
+		return s2 + str + s2;
+	}
+
+	public boolean startHi(String str) {
+		return str.startsWith("hi");
+	}
+
 }

@@ -12,6 +12,7 @@ public class Car {
 
 	Car(String model) {
 		this(model, "은색", 250);
+		System.out.println();
 	}
 
 	Car(String model, String color) {

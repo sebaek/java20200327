@@ -91,4 +91,12 @@ public class WarmUP1 {
 		char last = str.charAt(len - 1);
 		return last + str + last;
 	}
+
+	public boolean or35(int n) {
+		boolean m3 = n % 3 == 0;
+		boolean m5 = n % 5 == 0;
+
+		return m3 || m5;
+	}
+
 }

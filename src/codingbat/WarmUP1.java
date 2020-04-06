@@ -86,4 +86,9 @@ public class WarmUP1 {
 
 	}
 
+	public String backAround(String str) {
+		int len = str.length();
+		char last = str.charAt(len - 1);
+		return last + str + last;
+	}
 }

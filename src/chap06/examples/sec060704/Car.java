@@ -9,18 +9,23 @@ public class Car {
 	int maxSpeed;
 
 	Car() {
-	}
+		System.out.println("에이라는 일을한다.");
+	}	
 
 	Car(String model) {
-		this.model = model;
+		this(model, "노랑");
+//		this.model = model;
+		
 	}
 
 	Car(String model, String color) {
+		this();
 		this.model = model;
 		this.color = color;
 	}
 
 	Car(String model, String color, int maxSpeed) {
+		this();
 		this.model = model;
 		this.color = color;
 		this.maxSpeed = maxSpeed;

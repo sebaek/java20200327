@@ -34,7 +34,8 @@ public class WarmUP1 {
 	}
 
 	public boolean nearHundred(int n) {
-		boolean r = (90 <= n && n <= 110) || (190 <= n && n <= 210);
+		boolean r = (90 <= n && n <= 110)
+				|| (190 <= n && n <= 210);
 
 		return r;
 	}
@@ -113,6 +114,47 @@ public class WarmUP1 {
 
 	public boolean startHi(String str) {
 		return str.startsWith("hi");
+	}
+
+	public boolean icyHot(int temp1, int temp2) {
+		boolean negative = temp1 < 0 || temp2 < 0;
+		boolean over100 = temp1 > 100 || temp2 > 100;
+
+		return negative && over100;
+	}
+
+	public boolean in1020(int a, int b) {
+		boolean ain = a >= 10 && a <= 20;
+		boolean bin = b >= 10 && b <= 20;
+		return ain || bin;
+	}
+
+	public boolean hasTeen(int a, int b, int c) {
+		boolean ateen = a >= 13 && a <= 19;
+		boolean bteen = b >= 13 && b <= 19;
+		boolean cteen = c >= 13 && c <= 19;
+
+		return ateen || bteen || cteen;
+	}
+
+	public boolean loneTeen(int a, int b) {
+		boolean ateen = a >= 13 && a <= 19;
+		boolean bteen = b >= 13 && b <= 19;
+
+		return ateen ^ bteen;
+	}
+
+	public String delDel(String str) {
+		if (str.indexOf("del") == 1) {
+			String left = str.substring(0, 1);
+			String right = str.substring(4);
+			return left + right;
+		}
+		return str;
+	}
+
+	public boolean mixStart(String str) {
+		return str.indexOf("ix") == 1;
 	}
 
 }

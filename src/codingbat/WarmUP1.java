@@ -179,4 +179,14 @@ public class WarmUP1 {
 		return r;
 	}
 
+	public int close10(int a, int b) {
+		int adiff = Math.abs(a - 10);
+		int bdiff = Math.abs(b - 10);
+
+		int r = adiff > bdiff ? b : a;
+
+		r = adiff == bdiff ? 0 : r;
+		return r;
+	}
+
 }

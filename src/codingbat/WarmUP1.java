@@ -157,4 +157,19 @@ public class WarmUP1 {
 		return str.indexOf("ix") == 1;
 	}
 
+	public String startOz(String str) {
+		int loop = 2 < str.length() ? 2 : str.length();
+		String r = "";
+		for (int i = 0; i < loop; i++) {
+
+			if (i == 0 && str.charAt(i) == 'o') {
+				r += str.charAt(i);
+			}
+
+			if (i == 1 && str.charAt(i) == 'z') {
+				r += str.charAt(i);
+			}
+		}
+		return r;
+	}
 }

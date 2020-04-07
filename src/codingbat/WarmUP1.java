@@ -172,4 +172,11 @@ public class WarmUP1 {
 		}
 		return r;
 	}
+
+	public int intMax(int a, int b, int c) {
+		int r = a < b ? b : a;
+		r = r < c ? c : r;
+		return r;
+	}
+
 }

@@ -197,4 +197,11 @@ public class WarmUP1 {
 		return in30 || in40;
 	}
 
+	public int max1020(int a, int b) {
+		a = a >= 10 && a <= 20 ? a : 0;
+		b = b >= 10 && b <= 20 ? b : 0;
+
+		return Math.max(a, b);
+	}
+
 }

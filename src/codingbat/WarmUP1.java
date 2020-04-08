@@ -215,4 +215,23 @@ public class WarmUP1 {
 		return cnt >= 1 && cnt <= 3;
 	}
 
+	public boolean lastDigit(int a, int b) {
+		int a1 = a % 10;
+		int b1 = b % 10;
+		return a1 == b1;
+	}
+
+	public String endUp(String str) {
+		if (str.length() > 3) {
+			String left = str.substring(0, str.length() - 3);
+			String right = str
+					.substring(str.length() - 3, str.length())
+					.toUpperCase();
+			return left + right;
+		} else {
+			return str.toUpperCase();
+		}
+
+	}
+
 }

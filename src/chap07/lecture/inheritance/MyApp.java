@@ -5,5 +5,9 @@ public class MyApp {
 		Child c = new Child();
 		c.i = 30;
 		c.method();
+		
+		GrandChild g = new GrandChild();
+		g.i = 40;
+		g.method();
 	}
 }

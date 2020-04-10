@@ -1,9 +1,17 @@
 package chap07.lecture.polymorphism;
 
 public class PolyMorphismApp {
+	public static void sayCry(KindaCat c) {
+		c.cry();
+	}
 	public static void main(String[] args) {
 		Tiger t = new Tiger();
 		Cat c = new Cat();
+	
+		sayCry(t);
+		sayCry(c);
+		sayCry(new Tiger());
+		sayCry(new Cat());
 		
 		long[] larr = new long[3];
 		larr[0] = 3;

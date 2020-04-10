@@ -54,6 +54,43 @@ public class WarmUP2 {
 		return false;
 	}
 
+	public String stringBits(String str) {
+		String r = "";
+
+		for (int i = 0; i < str.length(); i += 2) {
+			r += str.charAt(i);
+		}
+		return r;
+	}
+
+	public String stringSplosion(String str) {
+		String r = "";
+
+		for (int i = 1; i <= str.length(); i++) {
+			r += str.substring(0, i);
+		}
+		return r;
+	}
+
+	public int last2(String str) {
+		if (str.length() < 3) {
+			return 0;
+		}
+
+		int cnt = 0;
+		String last = str.substring(str.length() - 2);
+
+		for (int i = 0; i < str.length() - 2; i++) {
+			String sub = str.substring(i, i + 2);
+			if (sub.equals(last)) {
+				cnt++;
+			}
+		}
+
+		return cnt;
+
+	}
+
 	public int arrayCount9(int[] nums) {
 		int cnt = 0;
 
@@ -91,6 +128,22 @@ public class WarmUP2 {
 			}
 		}
 		return false;
+	}
+
+	public int stringMatch(String a, String b) {
+		int len = Math.min(a.length(), b.length());
+		int cnt = 0;
+
+		for (int i = 0; i < len - 1; i++) {
+			String suba = a.substring(i, i + 2);
+			String subb = b.substring(i, i + 2);
+			if (suba.equals(subb)) {
+				cnt++;
+			}
+		}
+
+		return cnt;
+
 	}
 
 }

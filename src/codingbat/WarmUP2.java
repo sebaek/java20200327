@@ -1,6 +1,33 @@
 package codingbat;
 
 public class WarmUP2 {
+	public String stringTimes(String str, int n) {
+		String r = "";
+
+		for (int i = 0; i < n; i++) {
+			r += str;
+		}
+
+		return r;
+	}
+
+	public String frontTimes(String str, int n) {
+		String r = "";
+		String sub = null;
+
+		if (str.length() > 3) {
+			sub = str.substring(0, 3);
+		} else {
+			sub = str;
+		}
+
+		for (int i = 0; i < n; i++) {
+			r += sub;
+		}
+
+		return r;
+	}
+
 	public int arrayCount9(int[] nums) {
 		int cnt = 0;
 
@@ -32,7 +59,8 @@ public class WarmUP2 {
 	public boolean array123(int[] nums) {
 
 		for (int i = 2; i < nums.length; i++) {
-			if (nums[i] == 3 && nums[i - 1] == 2 && nums[i - 2] == 1) {
+			if (nums[i] == 3 && nums[i - 1] == 2
+					&& nums[i - 2] == 1) {
 				return true;
 			}
 		}

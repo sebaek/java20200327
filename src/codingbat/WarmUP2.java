@@ -146,4 +146,20 @@ public class WarmUP2 {
 
 	}
 
+	public String stringX(String str) {
+		String r = "";
+
+		for (int i = 0; i < str.length(); i++) {
+			if (i == 0 || i == str.length() - 1) {
+				r += str.charAt(i);
+			} else {
+				if (str.charAt(i) != 'x') {
+					r += str.charAt(i);
+				}
+			}
+		}
+
+		return r;
+	}
+
 }

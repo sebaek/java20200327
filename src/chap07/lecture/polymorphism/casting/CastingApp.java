@@ -16,9 +16,22 @@ public class CastingApp {
 		Cat c1 = (Cat) k1;
 		Tiger t1 = (Tiger) k2;
 		
+		System.out.println(k1 instanceof Tiger);
+		if (k1 instanceof Tiger) {
+			Tiger t2 = (Tiger) k1;
+		}
+		
+		System.out.println(k1 instanceof Cat);
+		System.out.println(k1 instanceof KindaCat);
 		
 	}
 }
+
+
+
+
+
+
 
 
 

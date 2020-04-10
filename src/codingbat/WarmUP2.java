@@ -27,17 +27,32 @@ public class WarmUP2 {
 
 		return r;
 	}
+
 	int countXX(String str) {
-		  int cnt = 0;
-		  
-		  for (int i = 0; i < str.length() - 1; i++) {
-		    String sub = str.substring(i, i+2);
-		    if (sub.equals("xx")) {
-		      cnt++;
-		    }
-		  }
-		  return cnt;
+		int cnt = 0;
+
+		for (int i = 0; i < str.length() - 1; i++) {
+			String sub = str.substring(i, i + 2);
+			if (sub.equals("xx")) {
+				cnt++;
+			}
 		}
+		return cnt;
+	}
+
+	boolean doubleX(String str) {
+
+		for (int i = 0; i < str.length() - 1; i++) {
+			if (str.charAt(i) == 'x') {
+				if (str.charAt(i + 1) == 'x') {
+					return true;
+				} else {
+					break;
+				}
+			}
+		}
+		return false;
+	}
 
 	public int arrayCount9(int[] nums) {
 		int cnt = 0;

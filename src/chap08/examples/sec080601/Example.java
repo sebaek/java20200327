@@ -2,9 +2,9 @@ package chap08.examples.sec080601;
 
 public class Example {
 	public static void main(String[] args) {
-		ImplemetationC impl = new ImplemetationC();
+		ImplementationC impl = new ImplementationC();
 		
-		System.out.println(impl instanceof ImplemetationC);
+		System.out.println(impl instanceof ImplementationC);
 		System.out.println(impl instanceof InterfaceA);
 		System.out.println(impl instanceof InterfaceB);
 		System.out.println(impl instanceof InterfaceC);

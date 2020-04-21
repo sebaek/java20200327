@@ -180,4 +180,8 @@ public class WarmUP2 {
 		return r;
 	}
 
+	public String stringYak(String str) {
+		return str.replace("yak", "");
+	}
+
 }

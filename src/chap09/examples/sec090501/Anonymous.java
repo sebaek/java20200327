@@ -28,7 +28,7 @@ public class Anonymous {
 				walk();
 			}
 		};
-		
+//		localVar.walk();
 		localVar.wake();
 	}
 	

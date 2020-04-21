@@ -162,4 +162,22 @@ public class WarmUP2 {
 		return r;
 	}
 
+	public String altPairs(String str) {
+		String r = "";
+
+		int i = 0;
+
+		while (i < str.length()) {
+			r += str.charAt(i);
+			i = i + 1;
+			if (i >= str.length()) {
+				break;
+			}
+			r += str.charAt(i);
+			i = i + 3;
+		}
+
+		return r;
+	}
+
 }

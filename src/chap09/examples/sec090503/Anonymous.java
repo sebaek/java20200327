@@ -16,7 +16,6 @@ public class Anonymous {
 //		var2 = 30;
 		
 		Calculatable calc = new Calculatable() {
-			
 			@Override
 			public int sum() {
 				int result = field + arg1 + arg2 + var1 + var2;

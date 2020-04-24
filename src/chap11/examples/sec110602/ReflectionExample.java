@@ -4,8 +4,6 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
-// 491의 예제 작성
-// 493의 결과 보고 Car 클래스 완성
 class Car {
 	String model;
 	String owner;

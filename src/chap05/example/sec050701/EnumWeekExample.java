@@ -49,6 +49,7 @@ public class EnumWeekExample {
 		} else {
 			System.out.println("열심히 자바 공부합니다.");
 		}
+
 	}
 }
 

@@ -1,4 +1,4 @@
-package myjava;
+package test;
 
 public class TestAnswers2 {
 	// 1:4
